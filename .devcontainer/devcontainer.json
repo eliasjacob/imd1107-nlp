@@ -1,0 +1,79 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/anaconda
+{
+	"name": "IMD1107",
+	"build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		// "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+		// 	"installCudnn": true,
+		// 	"installCudnnDev": true,
+		// 	"installNvtx": true,
+		// 	"installToolkit": true,
+		// 	"cudaVersion": "12.2",
+		// 	"cudnnVersion": "8.9.5.29"
+		// },
+		// "ghcr.io/iterative/features/nvtop:1": {},
+		"ghcr.io/rocker-org/devcontainer-features/miniforge:1": {
+			"version": "latest",
+			"variant": "Mambaforge"
+		}
+	},
+
+	"hostRequirements": {
+		  "gpu": "optional" 
+		},
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "python --version",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root",
+	"customizations": {
+		"vscode": {
+			// "extensions": [
+			// 	"ms-python.black-formatter",
+			// 	"ms-toolsai.datawrangler",
+			// 	"ms-vscode-remote.remote-containers",
+			// 	// "GitHub.codespaces",
+			// 	// "GitHub.copilot",
+			// 	// "GitHub.copilot-chat",
+			// 	// "GitHub.vscode-pull-request-github",
+			// 	"VisualStudioExptTeam.vscodeintellicode",
+			// 	"VisualStudioExptTeam.intellicode-api-usage-examples",
+			// 	"ms-python.isort",
+			// 	"ms-toolsai.jupyter",
+			// 	"ms-toolsai.jupyter-keymap",
+			// 	"ms-toolsai.jupyter-renderers",
+			// 	"ms-toolsai.vscode-jupyter-slideshow",
+			// 	"ms-vsliveshare.vsliveshare",
+			// 	"MS-CEINTL.vscode-language-pack-pt-BR",
+			// 	"ms-python.vscode-pylance",
+			// 	"ms-python.python",
+			// 	"ms-python.debugpy",
+			// 	"ms-vscode-remote.remote-ssh",
+			// 	"ms-vscode-remote.remote-ssh-edit",
+			// 	"ms-vscode.remote-server",
+			// 	"ms-vscode.remote-explorer",
+			// 	"ms-azuretools.vscode-docker",
+			// 	"ms-toolsai.vscode-jupyter-cell-tags",
+
+			// ]
+		}
+	}
+}
