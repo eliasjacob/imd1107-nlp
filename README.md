@@ -51,7 +51,7 @@ This repository is configured to work with Visual Studio Code Dev Containers, pr
 2. Clone this repository to your local machine (if you haven't already):
 
    ```shell
-   git clone https://github.com/eliasjacob/dell_deep_learning_genai.git
+   git clone https://github.com/eliasjacob/imd1107-nlp.git
    ```
 
 3. Open the cloned repository in VS Code.
