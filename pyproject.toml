@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "imd1107-nlp"
+version = "0.1.0"
+description = ""
+authors = ["Elias Jacob <elias.jacob@ufrn.br>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch = {version = "^2.4.1+cu124", source = "torch"}
+torchvision = {version = "^0.19.1+cu124", source = "torch"}
+torchaudio = {version = "^2.4.1+cu124", source = "torch"}
+wordcloud = "^1.9.3"
+xgboost = "^2.1.1"
+lightgbm = "^4.5.0"
+scikit-learn = "^1.5.2"
+langgraph = "^0.2.34"
+torchtext = "0.6.0"
+ipykernel = "^6.29.5"
+ipywidgets = "^8.1.5"
+evaluate = "^0.4.3"
+fasttext = "^0.9.3"
+gensim = "^4.3.3"
+nbformat = "^5.10.4"
+nltk = "^3.9.1"
+pyldavis = "^3.4.1"
+pypdf2 = "^3.0.1"
+spacy = "~3.7.5"
+beautifulsoup4 = "^4.12.3"
+langchain-community = "^0.3.1"
+langchain-experimental = "^0.3.2"
+langchain-chroma = "^0.1.4"
+langchain-huggingface = "^0.1.0"
+langchain-openai = "^0.2.2"
+langchain-anthropic = "^0.2.3"
+langchain-ollama = "^0.2.0"
+pypdf = "^5.0.1"
+scikit-optimize = "^0.10.2"
+
+
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
