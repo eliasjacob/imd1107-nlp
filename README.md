@@ -48,7 +48,7 @@ Follow these steps to set up the environment and dependencies:
     ```bash
     wandb login
     ```
-<!-- 
+    
 ## Using VS Code Dev Containers
 
 This repository is configured to work with Visual Studio Code Dev Containers, providing a consistent and isolated development environment. To use this feature:
@@ -69,7 +69,7 @@ This repository is configured to work with Visual Studio Code Dev Containers, pr
 
 6. Once the container is built, you'll have a fully configured environment with all the necessary dependencies installed.
 
-Using Dev Containers ensures that all course participants have the same development environment, regardless of their local setup. It also makes it easier to manage dependencies and avoid conflicts with other projects. -->
+Using Dev Containers ensures that all course participants have the same development environment, regardless of their local setup. It also makes it easier to manage dependencies and avoid conflicts with other projects.
 
 ## Getting Started
 
