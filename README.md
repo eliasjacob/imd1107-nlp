@@ -31,10 +31,16 @@ Follow these steps to set up the environment and dependencies:
     ollama pull llama3.1
     ```
 
-5. **Set Up Environment**:
-    ```bash
-    pip install poetry
-    poetry install
+5. **Install Dependencies**:
+ - For GPU support:
+    ```shell
+    poetry install --sync -E cuda --with cuda
+    poetry shell
+    ```
+    
+- For CPU-only support:
+    ```shell
+    poetry install --sync -E cpu
     poetry shell
     ```
 
