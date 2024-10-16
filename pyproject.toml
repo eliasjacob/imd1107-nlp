@@ -40,6 +40,10 @@ langchain-anthropic = "^0.2.3"
 langchain-ollama = "^0.2.0"
 pypdf = "^5.0.1"
 scikit-optimize = "^0.10.2"
+ripgrep = "^14.1.0"
+plotly = "^5.24.1"
+plotly-express = "^0.4.1"
+langchain = "^0.3.3"
 
 [tool.poetry.group.cuda]
 optional = true
