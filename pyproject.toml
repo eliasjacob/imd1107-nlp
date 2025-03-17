@@ -11,8 +11,8 @@ python = ">=3.12,<3.13"
 
 # ===========================================
 # =========== START OF TORCH PART ===========
-torch       = { version = "^2.6", source = "pytorch-cpu", markers = "extra=='cpu' and extra!='cuda'" }
-torchvision = { version = "^0.21", source = "pytorch-cpu", markers = "extra=='cpu' and extra!='cuda'" }
+torch       = { version = "==2.5.1", source = "pytorch-cpu", markers = "extra=='cpu' and extra!='cuda'" }
+torchvision = { version = "==0.20.1", source = "pytorch-cpu", markers = "extra=='cpu' and extra!='cuda'" }
 skorch = "^1.1.0"
 wordcloud = "^1.9.4"
 xgboost = "^2.1.4"
@@ -53,8 +53,6 @@ nbconvert = "^7.16.6"
 wandb = "^0.19.8"
 sentence-transformers = "^3.4.1"
 unstructured = "^0.17.0"
-youtube-transcript-api = "^1.0.0"
-langchain-yt-dlp = "^0.0.8"
 langchain-text-splitters = "^0.3.6"
 tiktoken = "^0.9.0"
 
@@ -63,8 +61,8 @@ optional = true
 
 # https://github.com/pytorch/pytorch/blob/main/RELEASE.md#release-compatibility-matrix
 [tool.poetry.group.cuda.dependencies]
-torch       = { version = "^2.6", source = "pytorch-cuda", markers = "extra=='cuda' and extra!='cpu'" }
-torchvision = { version = "^0.21", source = "pytorch-cuda", markers = "extra=='cuda' and extra!='cpu'" }
+torch       = { version = "==2.5.1", source = "pytorch-cuda", markers = "extra=='cuda' and extra!='cpu'" }
+torchvision = { version = "==0.20.1", source = "pytorch-cuda", markers = "extra=='cuda' and extra!='cpu'" }
 
 [tool.poetry.extras]
 cpu  = ["torch", "torchvision"]
