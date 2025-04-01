@@ -125,6 +125,7 @@ Ensure you have a compatible system (Linux, macOS, or Windows 10+ with WSL recom
 
     ```shell
     poetry install --sync -E cuda --with cuda
+    poetry self add poetry-plugin-shell
     poetry shell
     ```
 
@@ -132,6 +133,7 @@ Ensure you have a compatible system (Linux, macOS, or Windows 10+ with WSL recom
 
     ```shell
     poetry install --sync -E cpu
+    poetry self add poetry-plugin-shell
     poetry shell
     ```
 
