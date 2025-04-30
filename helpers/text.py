@@ -91,3 +91,70 @@ def remove_repeated_letters(text: str, n_repeat: int = 4) -> str:
     # Example: 'hellooooo' -> 'hello'
     return re.sub(r'([a-z])\1{'+str(n_repeat)+',}', r'\1', text).strip()
 
+
+def remove_first_line_of_text(text: str) -> str:
+    """
+    Remove the first line of a string.
+
+    Args:
+        text (str): The input string.
+
+    Returns:
+        str: The string with the first line removed.
+    """
+    return re.sub(r"^.*\n", "", text).strip()
+
+
+def remove_last_line_of_text(text: str) -> str:
+    """
+    Remove the last line of a string.
+
+    Args:
+        text (str): The input string.
+
+    Returns:
+        str: The string with the last line removed.
+    """
+    return re.sub(r"\n.*$", "", text).strip()
+
+
+def correct_isolated_commas(text: str) -> str:
+    """
+    Correct isolated commas in a string.
+
+    Args:
+        text (str): The input string.
+
+    Returns:
+        str: The string with isolated commas corrected.
+    """
+    # Replace punctuation with a blank character before
+    text = re.sub(r" ([.,:;!?])", r"\1", text)
+    return text.strip()
+
+
+def keep_words_longer_than(text: str, min_length: int = 2) -> str:
+    """
+    This function keeps only the words in the text that are longer than a given length.
+
+    Args:
+        text (str): The input text.
+        min_length (int, optional): The minimum length of the words to keep. Defaults to 2.
+
+    Returns:
+        str: The text with only the words longer than the given length.
+    """
+    return " ".join([word for word in text.split() if len(word) > min_length])
+
+
+def keep_only_alphabet_characters(text: str) -> str:
+    """
+    This function keeps only the alphabet characters in the text.
+
+    Args:
+        text (str): The input text.
+
+    Returns:
+        str: The text with only the alphabet characters.
+    """
+    return re.sub(r"[^a-zA-Z]", " ", text).strip()
