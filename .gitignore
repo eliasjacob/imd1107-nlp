@@ -168,3 +168,4 @@ checkpoints/
 .DS_Store
 binaries.zip
 wandb/
+.github
